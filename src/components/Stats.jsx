@@ -4,7 +4,7 @@ export const Stats = () => {
 
     return (
 
-        <main className="w-[55%] h-full rounded-xl flex flex-col justify-start items-center gap-5">
+        <main className="w-full h-full rounded-xl flex flex-col justify-start items-center gap-5">
 
             {/* Search Bar Container*/}
             <div className="w-full h-16 bg-gray-200 rounded-xl">

@@ -3,6 +3,7 @@ import '../styles/global.css'
 import { Aside } from '../components/Aside'
 import { Stats } from '../components/Stats'
 import { Calendary } from '../components/Calendary';
+import { CitiesWeather } from '../components/Cities';
 ---
 <!doctype html>
 <html lang="en">
@@ -13,12 +14,42 @@ import { Calendary } from '../components/Calendary';
 		<meta name="generator" content={Astro.generator} />
 		<title>Tuki | Weather App</title>
 	</head>
-	<body class="w-full h-screen flex flex-row justify-between items-center p-10">
+	<body class="w-full flex flex-col h-[4000px]">
 
-		<slot />
-		<Aside />
-		<Stats />
-		<Calendary />
+		<main class="w-full flex h-screen justify-between p-10">
 
+			<div class="w-[8%]">
+
+				<Aside />
+
+			</div>
+
+			<slot />
+			
+			<section class="w-[55%] h-full">
+
+				<Stats />
+
+			</section>
+			
+			<section class="w-[30%] h-full">
+
+				<Calendary />
+
+			</section>
+
+		</main>
+
+		<section class="w-full h-screen flex relative">
+
+			<section class="w-[89%] h-screen absolute right-0 p-10">
+
+				<CitiesWeather />
+
+			</section>
+			
+
+		</section>
+		
 	</body>
 </html>

@@ -4,7 +4,7 @@ export const Aside = () => {
 
     return (
 
-        <aside className="w-[8%] h-full bg-gray-200 rounded-xl flex flex-col justify-start items-center">
+        <aside className="w-[8%] h-[92%] bg-gray-200 rounded-xl flex flex-col justify-start items-center fixed top-1/2 -translate-y-1/2 z-10">
 
             <div className="w-full h-auto flex justify-center items-center mt-10">
 
