@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+/* Scrollbar total */
+::-webkit-scrollbar {
+  width: 8px;            
+  height: 8px;           
+}
+
+/* Barra de scroll */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;   
+  border-radius: 8px;
+}
+
+/* Thumb (el "botón" que se mueve) */
+::-webkit-scrollbar-thumb {
+  background: #007aff; 
+  border-radius: 8px;
+}
+
+/* Hover del thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #005fcc;
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ModalAddCity } from "./ModalAddCity";
 
 export const CitiesWeather = () => {
 
@@ -20,8 +21,12 @@ export const CitiesWeather = () => {
         { name: "Miramar", temp: 19, condition: "Windy ☁️", image: '/Windy-Place.png', hour: '21:42:00', date: '2025/09/03' },
     ]);
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const addCity = () => {
+        
         setCities([...cities, { name: "Nueva Ciudad", temp: 0, condition: "Cargando..." }]);
+        setIsModalOpen(false);
     };
 
     return (
@@ -35,7 +40,7 @@ export const CitiesWeather = () => {
                     Cities Forecastes
                 </h2>
 
-                <button onClick={addCity} className="bg-[#007aff] hover:bg-[#0051AA] transition-all ease-in hover:cursor-pointer text-white font-medium rounded-2xl flex flex-col justify-center items-center p-3">
+                <button onClick={() => setIsModalOpen(true)} className="bg-[#007aff] hover:bg-[#0051AA] transition-all ease-in hover:cursor-pointer text-white font-medium rounded-2xl flex flex-col justify-center items-center p-3">
                     Add city
                 </button>
                 
@@ -57,6 +62,20 @@ export const CitiesWeather = () => {
                                 <p className="text-4xl">{`${city.temp}º`}</p>
                                 <p className="text-xl">{city.name}</p>
                                 <p className="text-base">{city.condition}</p>
+
+                            </div>
+
+                            <div className="absolute top-3 right-3 hover:cursor-pointer hover:bg-red-500 rounded-full p-2">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M4 7l16 0" />
+                                    <path d="M10 11l0 6" />
+                                    <path d="M14 11l0 6" />
+                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                </svg>
+
+
                             </div>
 
                         </div>
@@ -73,6 +92,9 @@ export const CitiesWeather = () => {
                 ))}
 
             </div>
+
+            {/* Modal */}
+            <ModalAddCity isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onConfirm={addCity} />
 
         </section>
     

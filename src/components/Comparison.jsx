@@ -57,20 +57,51 @@ export const Comparison = () => {
     return (
 
         <section className="w-full bg-gray-200 rounded-xl mt-6 px-10 py-6 ">
+          
+            <div className="w-full h-auto flex flex-col gap-4">
 
-                    
-            <div className="w-full h-[300px] flex flex-row justify-between">
+                <div className="w-full flex justify-start items-center">
 
-                <div className="h-full w-1/2">
-
-                    <h3 className="text-xl font-medium text-gray-500">Temperature comparison</h3>
-                    <Bar data={chartData} options={chartOptions} />
+                    <h3 className="text-xl font-medium text-gray-500">Temperature comparison - Statistics</h3>
 
                 </div>
 
-                <div className="h-full w-1/2">
+                <div className="w-full flex justify-between items-center gap-3">
 
-                    <Bar data={chartData} options={chartOptions} />
+                    <div className="h-[400px] w-1/2">
+
+                        <Bar data={chartData} options={chartOptions} />
+
+                    </div>
+
+                    <div className="h-[400px] max-h-[400px] overflow-y-auto w-1/2 p-4 flex flex-col gap-4">
+
+                        <div className="bg-white p-4 rounded-xl shadow flex justify-between">
+                            <p className="text-gray-500 font-medium">Max Temperature</p>
+                            <h2 className="font-medium">{Math.max(...cities.map(c => c.temp))}°C</h2>
+                        </div>
+
+                        <div className="bg-white p-4 rounded-xl shadow flex justify-between">
+                            <p className="text-gray-500 font-medium">Min Temperature</p>
+                            <h2 className="font-medium">{Math.min(...cities.map(c => c.temp))}°C</h2>
+                        </div>
+
+                        <div className="bg-white p-4 rounded-xl shadow flex justify-between">
+                            <p className="text-gray-500 font-medium">Average Temperature</p>
+                            <h2 className="font-medium">{Math.round(cities.reduce((a,b) => a + b.temp, 0)/cities.length)}°C</h2>
+                        </div>
+
+                        {Object.entries(cities.reduce((acc, city) => {
+                            acc[city.condition] = (acc[city.condition] || 0) + 1;
+                            return acc;
+                        }, {})).map(([condition, count]) => (
+                            <div key={condition} className="bg-white p-4 rounded-xl shadow flex justify-between font-medium text-gray-500">
+                            <span>{condition}</span>
+                            <span className="text-black font-medium">{count} city(s)</span>
+                            </div>
+                        ))}
+
+                    </div>
 
                 </div>
                 

@@ -5,6 +5,7 @@ import { Stats } from '../components/Stats'
 import { Calendary } from '../components/Calendary';
 import { CitiesWeather } from '../components/Cities';
 import { Comparison } from '../components/Comparison';
+import { Map } from '../components/Map';
 ---
 <!doctype html>
 <html lang="en">
@@ -41,11 +42,11 @@ import { Comparison } from '../components/Comparison';
 
 		</main>
 
-		<section class="w-full h-screen flex relative">
+		<section class="w-full flex justify-end relative max-h-auto">
 
-			<section class="w-[89%] h-screen absolute right-0 p-10">
+			<section class="w-[89%] h-full flex flex-col p-10">
 
-				<CitiesWeather />
+				<CitiesWeather client:load/>
 
 				<Comparison client:load/>
 
@@ -53,6 +54,17 @@ import { Comparison } from '../components/Comparison';
 			
 
 		</section>
+
+		<section class="w-full flex justify-end">
+
+			<section class="w-[89%] right-0 p-10">
+
+				<Map />
+
+			</section>
+
+		</section>
+		
 		
 	</body>
 </html>

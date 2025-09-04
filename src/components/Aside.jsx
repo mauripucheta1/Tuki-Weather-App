@@ -74,18 +74,11 @@ export const Aside = () => {
                 <a href="#" className="h-auto flex flex-col justify-center items-center gap-1 text-gray-700 hover:text-[#007aff] transition-all ease-in">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M4 6l8 0" />
-                        <path d="M16 6l4 0" />
-                        <path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M4 12l2 0" />
-                        <path d="M10 12l10 0" />
-                        <path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M4 18l11 0" />
-                        <path d="M19 18l1 0" />
+                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                        <path d="M3 7l9 6l9 -6" />
                     </svg>
 
-                    <p className="font-medium">Settings</p>
+                    <p className="font-medium">Contact</p>
                 
                 </a>   
                 
