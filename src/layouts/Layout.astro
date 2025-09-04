@@ -4,6 +4,7 @@ import { Aside } from '../components/Aside'
 import { Stats } from '../components/Stats'
 import { Calendary } from '../components/Calendary';
 import { CitiesWeather } from '../components/Cities';
+import { Comparison } from '../components/Comparison';
 ---
 <!doctype html>
 <html lang="en">
@@ -45,6 +46,8 @@ import { CitiesWeather } from '../components/Cities';
 			<section class="w-[89%] h-screen absolute right-0 p-10">
 
 				<CitiesWeather />
+
+				<Comparison client:load/>
 
 			</section>
 			

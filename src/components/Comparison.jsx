@@ -1,8 +1,12 @@
 import { useState } from "react";
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Tooltip, Legend } from "chart.js";
+ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
+import { Bar } from "react-chartjs-2"; 
 
-export const CitiesWeather = () => {
+export const Comparison = () => {
 
     const [cities, setCities] = useState([
+
         { name: "Jesús María", temp: 27, condition: "Sunny ☀️", image: '/Sunny-Place.png', hour: '21:52:00', date: '2025/09/03'},
         { name: "Colonia Caroya", temp: 19, condition: "Foggy ☁️", image: '/Foggy-Place.png', hour: '21:52:00', date: '2025/09/03'},
         { name: "San Francisco", temp: 19, condition: "Rainy ☁️", image: '/Rainy-Place.png', hour: '21:12:00', date: '2025/09/03' },
@@ -20,62 +24,60 @@ export const CitiesWeather = () => {
         { name: "Miramar", temp: 19, condition: "Windy ☁️", image: '/Windy-Place.png', hour: '21:42:00', date: '2025/09/03' },
     ]);
 
-    const addCity = () => {
-        setCities([...cities, { name: "Nueva Ciudad", temp: 0, condition: "Cargando..." }]);
+    // Datos para Chart.js
+    const chartData = {
+        labels: cities.map(city => city.name),
+        datasets: [
+            {
+                label: "Temperatura ºC",
+                data: cities.map(city => city.temp),
+                backgroundColor: "#007aff",
+                borderRadius: 8,
+            },
+        ],
+    };
+
+    const chartOptions = {
+        responsive: true,
+        plugins: {
+        legend: {
+            display: false,
+        },
+        tooltip: {
+            enabled: true,
+        },
+        },
+        scales: {
+        y: {
+            beginAtZero: true,
+        },
+        },
     };
 
     return (
 
-        <section className="bg-gray-200 rounded-xl px-10 py-6 flex flex-col gap-5">
+        <section className="w-full bg-gray-200 rounded-xl mt-6 px-10 py-6 ">
 
-            {/* Encabezado */}
-            <div className="w-full h-auto flex justify-between items-center">
+                    
+            <div className="w-full h-[300px] flex flex-row justify-between">
 
-                <h2 className="text-xl font-medium text-gray-500">
-                    Cities Forecastes
-                </h2>
+                <div className="h-full w-1/2">
 
-                <button onClick={addCity} className="bg-[#007aff] hover:bg-[#0051AA] transition-all ease-in hover:cursor-pointer text-white font-medium rounded-2xl flex flex-col justify-center items-center p-3">
-                    Add city
-                </button>
+                    <h3 className="text-xl font-medium text-gray-500">Temperature comparison</h3>
+                    <Bar data={chartData} options={chartOptions} />
+
+                </div>
+
+                <div className="h-full w-1/2">
+
+                    <Bar data={chartData} options={chartOptions} />
+
+                </div>
                 
             </div>
 
-            {/* Tarjetas */}
-            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 min-h-[550px] max-h-[550px] overflow-y-auto px-5">
-
-                {cities.map((city, idx) => (
-
-                    <div key={idx} className="bg-white shadow-md rounded-xl flex flex-col items-center">
-
-                        <div className="w-full h-[170px] rounded-t-xl relative">
-
-                            <img src={city.image} alt="Place" className="w-full h-full object-cover rounded-t-xl brightness-75" />
-
-                            <div className="absolute top-5 left-5 text-white font-medium flex flex-col">
-
-                                <p className="text-4xl">{`${city.temp}º`}</p>
-                                <p className="text-xl">{city.name}</p>
-                                <p className="text-base">{city.condition}</p>
-                            </div>
-
-                        </div>
-
-                        <div className="w-full h-[60px] flex justify-between items-center px-5 text-gray-500">
-
-                            <p className="text-lg font-medium">{city.hour}</p>
-                            <p className="text-lg font-medium">{city.date}</p>
-
-                        </div>
-
-                    </div>
-
-                ))}
-
-            </div>
-
         </section>
-    
-    );
 
-};
+    )
+
+}
