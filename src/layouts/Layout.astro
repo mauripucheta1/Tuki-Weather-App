@@ -6,6 +6,7 @@ import { Calendary } from '../components/Calendary';
 import { CitiesWeather } from '../components/Cities';
 import { Comparison } from '../components/Comparison';
 import { Map } from '../components/Map';
+import { Contact } from '../components/Contact';
 ---
 <!doctype html>
 <html lang="en">
@@ -16,7 +17,7 @@ import { Map } from '../components/Map';
 		<meta name="generator" content={Astro.generator} />
 		<title>Tuki | Weather App</title>
 	</head>
-	<body class="w-full flex flex-col h-[4000px]">
+	<body class="w-full flex flex-col h-auto">
 
 		<main class="w-full flex h-screen justify-between p-10">
 
@@ -44,7 +45,7 @@ import { Map } from '../components/Map';
 
 		<section class="w-full flex justify-end relative max-h-auto">
 
-			<section class="w-[89%] h-full flex flex-col p-10">
+			<section class="w-[89%] h-full flex flex-col p-10 gap-12">
 
 				<CitiesWeather client:load/>
 
@@ -60,6 +61,16 @@ import { Map } from '../components/Map';
 			<section class="w-[89%] right-0 p-10">
 
 				<Map />
+
+			</section>
+
+		</section>
+
+		<section class="w-full flex justify-end">
+
+			<section class="w-[89%] right-0 p-10">
+
+				<Contact />
 
 			</section>
 
