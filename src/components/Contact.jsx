@@ -3,21 +3,22 @@ export const Contact = () => {
 
     return (
 
-        <div className="w-full rounded-xl flex justify-between gap-5 h-[550px] bg-gray-200 p-10">
+        <div className="w-full rounded-xl flex flex-col lg:flex-row justify-between gap-2 lg:gap-5 h-[630px] lg:h-[550px] bg-gray-200 p-6 lg:p-10">
 
-            <div className="w-1/2 h-full flex flex-col justify-between">
+            <div className="lg:w-1/2 w-full h-1/2 lg:h-full flex flex-col justify-between">
             
-                <div className="w-full h-1/2 flex flex-col justify-center gap-2 px-10">
+                <div className="w-full h-1/2 flex flex-col justify-center gap-2 px-4 lg:px-10">
 
                     <div className="w-full flex justify-start items-center">
                     
-                        <p className="uppercase font-medium text-gray-500 text-2xl">We're here to help you</p>
+                        <p className="uppercase font-medium text-gray-500 md:text-2xl">We're here to help you</p>
 
                     </div>
 
-                    <div className="w-full text-5xl">
+                    <div className="w-full md:text-5xl flex flex-col">
                     
-                        <p className="font-normal text-gray-500"><span className="text-black font-bold">Discuss</span> your Software <br></br>Solution needs</p>
+                        <p className="font-normal text-gray-500"><span className="text-black font-bold">Discuss</span> your Software </p>
+                        <p>Solution needs</p>
 
                     </div>
 
@@ -96,7 +97,7 @@ export const Contact = () => {
             
             </div>
 
-            <div className="w-1/2 h-full flex flex-col rounded-xl bg-white p-10">
+            <div className="lg:w-1/2 w-full h-1/2 lg:h-full flex flex-col rounded-xl bg-white p-10">
             
                 <form className="w-full h-full flex flex-col gap-5" id="formContact">
 

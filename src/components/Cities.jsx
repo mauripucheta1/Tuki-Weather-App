@@ -31,17 +31,17 @@ export const CitiesWeather = () => {
 
     return (
 
-        <section className="bg-gray-200 rounded-xl px-10 py-6 flex flex-col gap-5">
+        <section className="bg-gray-200 rounded-xl px-4 md:px-10 py-4 md:py-6 flex flex-col gap-5">
 
             {/* Encabezado */}
             <div className="w-full h-auto flex justify-between items-center">
 
-                <h2 className="text-xl font-medium text-gray-500">
+                <h2 className="text-lg md:text-xl font-medium text-gray-500">
                     Cities Forecastes
                 </h2>
 
-                <button onClick={() => setIsModalOpen(true)} className="bg-[#007aff] hover:bg-[#0051AA] transition-all ease-in hover:cursor-pointer text-white font-medium rounded-2xl flex flex-col justify-center items-center p-3">
-                    Add city
+                <button onClick={() => setIsModalOpen(true)} className="w-[75px] bg-[#007aff] hover:bg-[#0051AA] transition-all ease-in hover:cursor-pointer text-white font-medium rounded-2xl flex flex-col justify-center items-center py-1">
+                    Add
                 </button>
                 
             </div>
@@ -80,10 +80,10 @@ export const CitiesWeather = () => {
 
                         </div>
 
-                        <div className="w-full h-[60px] flex justify-between items-center px-5 text-gray-500">
+                        <div className="w-full h-[50px] md:h-[60px] flex justify-between items-center px-5 text-gray-500">
 
-                            <p className="text-lg font-medium">{city.hour}</p>
-                            <p className="text-lg font-medium">{city.date}</p>
+                            <p className="text-sm md:text-lg font-medium">{city.hour}</p>
+                            <p className="text-sm md:text-lg font-medium">{city.date}</p>
 
                         </div>
 
