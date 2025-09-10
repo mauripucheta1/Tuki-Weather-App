@@ -24,11 +24,11 @@ import { Contact } from '../components/Contact';
 
 	<body class="w-full flex flex-col h-auto">
 
-		<main class="w-full flex h-auto 2xl:h-screen p-5 md:p-10 gap-5">
+		<main class="w-full flex h-auto 2xl:h-screen p-5 md:p-10 gap-5" id="weatherSection">
 
 			<!-- Aside (siempre a la izquierda) -->
 			<div class="w-[30%] md:w-[20%] xl:w-[15%] 2xl:w-[8%]">
-				<Aside />
+				<Aside client:load/>
 			</div>
 
 			<!-- Contenedor de Stats + Calendary -->
@@ -46,7 +46,7 @@ import { Contact } from '../components/Contact';
 
 		</main>
 
-		<section class="w-full flex justify-end p-5 md:p-10">
+		<section class="w-full flex justify-end p-5 md:p-10" id="citiesSection">
 
 			<div class="w-[70%] md:w-[81%] xl:w-[85%] 2xl:w-[91.5%] flex flex-col">
 
@@ -57,7 +57,7 @@ import { Contact } from '../components/Contact';
 
 		</section>
 
-		<section class="w-full flex justify-end p-5 md:p-10">
+		<section class="w-full flex justify-end p-5 md:p-10" id="mapSection">
 
 			<div class="w-[70%] md:w-[81%] xl:w-[85%] 2xl:w-[91.5%]">
 				<Map />
@@ -65,7 +65,7 @@ import { Contact } from '../components/Contact';
 
 		</section>
 	
-		<section class="w-full flex justify-end p-5 md:p-10 mb-5 md:mb-0.5">
+		<section class="w-full flex justify-end p-5 md:p-10 mb-5 md:mb-0.5" id="contactSection">
 
 			<div class="w-[70%] md:w-[81%] xl:w-[85%] 2xl:w-[91.5%]">
 				<Contact />
