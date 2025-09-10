@@ -70,19 +70,19 @@ export const Comparison = () => {
 
                 <div className="w-full flex justify-center md:justify-start items-center text-center">
 
-                    <h3 className="md:text-xl font-medium text-gray-500">Temperature Comparison & Statistics</h3>
+                    <h3 className="sm:text-lg md:text-xl font-medium text-gray-500">Temperature Comparison & Statistics</h3>
 
                 </div>
 
-                <div className="w-full flex flex-col md:flex-row justify-between items-center gap-5">
+                <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-5">
 
-                    <div className="h-auto md:h-[400px] w-full md:w-1/2">
+                    <div className="h-auto lg:h-[400px] w-full lg:w-1/2 flex justify-center items-center">
 
                         <Bar data={chartData} options={chartOptions} />
 
                     </div>
 
-                    <div className="h-[400px] max-h-[400px] overflow-y-auto w-full md:w-1/2 p-4 flex flex-col gap-4">
+                    <div className="h-[400px] max-h-[400px] overflow-y-auto w-full lg:w-1/2 p-4 flex flex-col gap-4">
 
                         <div className="bg-white p-4 rounded-xl shadow flex justify-between items-center">
                             <p className="text-gray-500 font-medium text-sm md:text-base">Max Temperature</p>

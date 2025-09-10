@@ -47,7 +47,7 @@ export const CitiesWeather = () => {
             </div>
 
             {/* Tarjetas */}
-            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 min-h-[550px] max-h-[550px] overflow-y-auto px-5">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 min-h-[550px] max-h-[550px] overflow-y-auto px-5">
 
                 {cities.map((city, idx) => (
 
@@ -82,8 +82,8 @@ export const CitiesWeather = () => {
 
                         <div className="w-full h-[50px] md:h-[60px] flex justify-between items-center px-5 text-gray-500">
 
-                            <p className="text-sm md:text-lg font-medium">{city.hour}</p>
-                            <p className="text-sm md:text-lg font-medium">{city.date}</p>
+                            <p className="text-sm md:text-lg lg:text-base font-medium">{city.hour}</p>
+                            <p className="text-sm md:text-lg lg:text-base font-medium">{city.date}</p>
 
                         </div>
 

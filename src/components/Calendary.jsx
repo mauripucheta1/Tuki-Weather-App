@@ -8,7 +8,7 @@ export const Calendary = () => {
 
             <div className="w-full flex justify-center items-center ">
 
-                <p className="text-gray-500 text-lg md:text-xl font-medium">7-Day Forecast</p>
+                <p className="text-gray-500 text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-medium">7-Day Forecast</p>
 
             </div>
 
@@ -16,7 +16,7 @@ export const Calendary = () => {
 
                 <div className="w-1/3 h-full flex justify-center items-center">
                 
-                    <p className="text-gray-500 font-medium md:text-xl">Today</p>
+                    <p className="text-gray-500 font-medium md:text-xl lg:text-lg 2xl:text-xl">Today</p>
 
                 </div>
 
@@ -24,11 +24,11 @@ export const Calendary = () => {
                 
                     <img src="/Sun.png" alt="Sun Image" className="w-8 md:w-12 h-8 md:h-12 object-contain" />
 
-                    <p className="font-medium md:text-xl">Sunny</p>
+                    <p className="font-medium md:text-xl lg:text-lg 2xl:text-xl">Sunny</p>
 
                 </div>
 
-                <div className="w-1/3 h-full flex justify-center items-center md:text-xl">
+                <div className="w-1/3 h-full flex justify-center items-center md:text-xl lg:text-lg 2xl:text-xl">
                 
                     <p className="font-medium">36<span className="text-gray-500">/22</span></p>
 
@@ -40,7 +40,7 @@ export const Calendary = () => {
 
                 <div className="w-1/3 h-full flex justify-center items-center">
                 
-                    <p className="text-gray-500 font-medium md:text-xl">Tue</p>
+                    <p className="text-gray-500 font-medium md:text-xl lg:text-lg 2xl:text-xl">Tue</p>
 
                 </div>
 
@@ -48,11 +48,11 @@ export const Calendary = () => {
                 
                     <img src="/Sun.png" alt="Sun Image" className="w-8 md:w-12 h-8 md:h-12 object-contain" />
 
-                    <p className="font-medium md:text-xl">Sunny</p>
+                    <p className="font-medium md:text-xl lg:text-lg 2xl:text-xl">Sunny</p>
 
                 </div>
 
-                <div className="w-1/3 h-full flex justify-center items-center md:text-xl">
+                <div className="w-1/3 h-full flex justify-center items-center md:text-xl lg:text-lg 2xl:text-xl">
                 
                     <p className="font-medium">37<span className="text-gray-500">/21</span></p>
 
@@ -64,7 +64,7 @@ export const Calendary = () => {
 
                 <div className="w-1/3 h-full flex justify-center items-center">
                 
-                    <p className="text-gray-500 font-medium md:text-xl">Wed</p>
+                    <p className="text-gray-500 font-medium md:text-xl lg:text-lg 2xl:text-xl">Wed</p>
 
                 </div>
 
@@ -72,11 +72,11 @@ export const Calendary = () => {
                 
                     <img src="/Sun.png" alt="Sun Image" className="w-8 md:w-12 h-8 md:h-12 object-contain" />
 
-                    <p className="font-medium md:text-xl">Sunny</p>
+                    <p className="font-medium md:text-xl lg:text-lg 2xl:text-xl">Sunny</p>
 
                 </div>
 
-                <div className="w-1/3 h-full flex justify-center items-center md:text-xl">
+                <div className="w-1/3 h-full flex justify-center items-center md:text-xl lg:text-lg 2xl:text-xl">
                 
                     <p className="font-medium">37<span className="text-gray-500">/21</span></p>
 
@@ -88,7 +88,7 @@ export const Calendary = () => {
 
                 <div className="w-1/3 h-full flex justify-center items-center">
                 
-                    <p className="text-gray-500 font-medium md:text-xl">Thu</p>
+                    <p className="text-gray-500 font-medium md:text-xl lg:text-lg 2xl:text-xl">Thu</p>
 
                 </div>
 
@@ -96,11 +96,11 @@ export const Calendary = () => {
                 
                     <img src="/Cloud.png" alt="Cloud Image" className="w-8 md:w-12 h-8 md:h-12 object-contain" />
 
-                    <p className="font-medium md:text-xl">Cloudy</p>
+                    <p className="font-medium md:text-xl lg:text-lg 2xl:text-xl">Cloudy</p>
 
                 </div>
 
-                <div className="w-1/3 h-full flex justify-center items-center md:text-xl">
+                <div className="w-1/3 h-full flex justify-center items-center md:text-xl lg:text-lg 2xl:text-xl">
                 
                     <p className="font-medium">37<span className="text-gray-500">/21</span></p>
 
@@ -112,7 +112,7 @@ export const Calendary = () => {
 
                 <div className="w-1/3 h-full flex justify-center items-center">
                 
-                    <p className="text-gray-500 font-medium md:text-xl">Fri</p>
+                    <p className="text-gray-500 font-medium md:text-xl lg:text-lg 2xl:text-xl">Fri</p>
 
                 </div>
 
@@ -120,11 +120,11 @@ export const Calendary = () => {
                 
                     <img src="/Cloud.png" alt="Cloud Image" className="w-8 md:w-12 h-8 md:h-12 object-contain" />
 
-                    <p className="font-medium md:text-xl">Cloudy</p>
+                    <p className="font-medium md:text-xl lg:text-lg 2xl:text-xl">Cloudy</p>
 
                 </div>
 
-                <div className="w-1/3 h-full flex justify-center items-center md:text-xl">
+                <div className="w-1/3 h-full flex justify-center items-center md:text-xl lg:text-lg 2xl:text-xl">
                 
                     <p className="font-medium">37<span className="text-gray-500">/21</span></p>
 
@@ -136,7 +136,7 @@ export const Calendary = () => {
 
                 <div className="w-1/3 h-full flex justify-center items-center">
                 
-                    <p className="text-gray-500 font-medium md:text-xl">Sat</p>
+                    <p className="text-gray-500 font-medium md:text-xl lg:text-lg 2xl:text-xl">Sat</p>
 
                 </div>
 
@@ -144,11 +144,11 @@ export const Calendary = () => {
                 
                     <img src="/Rain.jpg" alt="Rain Image" className="w-8 md:w-12 h-8 md:h-12 object-contain" />
 
-                    <p className="font-medium md:text-xl">Rainy</p>
+                    <p className="font-medium md:text-xl lg:text-lg 2xl:text-xl">Rainy</p>
 
                 </div>
 
-                <div className="w-1/3 h-full flex justify-center items-center md:text-xl">
+                <div className="w-1/3 h-full flex justify-center items-center md:text-xl lg:text-lg 2xl:text-xl">
                 
                     <p className="font-medium">37<span className="text-gray-500">/21</span></p>
 
@@ -160,7 +160,7 @@ export const Calendary = () => {
 
                 <div className="w-1/3 h-full flex justify-center items-center">
                 
-                    <p className="text-gray-500 font-medium md:text-xl">Sun</p>
+                    <p className="text-gray-500 font-medium md:text-xl lg:text-lg 2xl:text-xl">Sun</p>
 
                 </div>
 
@@ -168,11 +168,11 @@ export const Calendary = () => {
                 
                     <img src="/Sun.png" alt="Sun Image" className="w-8 md:w-12 h-8 md:h-12 object-contain" />
 
-                    <p className="font-medium md:text-xl">Sunny</p>
+                    <p className="font-medium md:text-xl lg:text-lg 2xl:text-xl">Sunny</p>
 
                 </div>
 
-                <div className="w-1/3 h-full flex justify-center items-center md:text-xl">
+                <div className="w-1/3 h-full flex justify-center items-center md:text-xl lg:text-lg 2xl:text-xl">
                 
                     <p className="font-medium">37<span className="text-gray-500">/21</span></p>
 

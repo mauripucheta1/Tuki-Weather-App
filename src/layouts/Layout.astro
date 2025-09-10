@@ -24,21 +24,21 @@ import { Contact } from '../components/Contact';
 
 	<body class="w-full flex flex-col h-auto">
 
-		<main class="w-full flex h-auto md:h-screen p-5 md:p-10 gap-5">
+		<main class="w-full flex h-auto 2xl:h-screen p-5 md:p-10 gap-5">
 
 			<!-- Aside (siempre a la izquierda) -->
-			<div class="w-[30%] md:w-[8%]">
+			<div class="w-[30%] md:w-[20%] xl:w-[15%] 2xl:w-[8%]">
 				<Aside />
 			</div>
 
 			<!-- Contenedor de Stats + Calendary -->
-			<div class="w-[70%] flex flex-col md:flex-row md:w-full gap-5 mt-5 md:mt-0">
+			<div class="w-[70%] flex flex-col xl:flex-row md:w-full gap-5 mt-5 md:mt-0">
 
-				<section class="w-full md:w-2/3 h-auto md:h-full">
+				<section class="w-full xl:w-2/3 h-auto md:h-full">
 					<Stats />
 				</section>
 
-				<section class="w-full md:w-1/3 h-auto md:h-full">
+				<section class="w-full xl:w-1/3 h-auto md:h-full">
 					<Calendary />
 				</section>
 
@@ -48,7 +48,7 @@ import { Contact } from '../components/Contact';
 
 		<section class="w-full flex justify-end p-5 md:p-10">
 
-			<div class="w-[70%] md:w-[92%] flex flex-col">
+			<div class="w-[70%] md:w-[81%] xl:w-[85%] 2xl:w-[91.5%] flex flex-col">
 
 				<CitiesWeather client:load/>
 				<Comparison client:load/>
@@ -59,15 +59,15 @@ import { Contact } from '../components/Contact';
 
 		<section class="w-full flex justify-end p-5 md:p-10">
 
-			<div class="w-[70%] md:w-[92%]">
+			<div class="w-[70%] md:w-[81%] xl:w-[85%] 2xl:w-[91.5%]">
 				<Map />
 			</div>
 
 		</section>
 	
-		<section class="w-full flex justify-end p-5 md:p-10">
+		<section class="w-full flex justify-end p-5 md:p-10 mb-5 md:mb-0.5">
 
-			<div class="w-[70%] md:w-[92%]">
+			<div class="w-[70%] md:w-[81%] xl:w-[85%] 2xl:w-[91.5%]">
 				<Contact />
 			</div>
 
