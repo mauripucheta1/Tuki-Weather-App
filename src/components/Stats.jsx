@@ -44,7 +44,7 @@ export const Stats = () => {
             {/* Forecast Container*/}
             <div className="w-full h-[160px] md:h-[240px] bg-gray-200 rounded-xl px-4 md:px-10 py-2 md:py-4">
 
-                <div className="w-full h-1/3 flex justify-start items-center">
+                <div className="w-full h-1/3 flex justify-center items-center sm:justify-start">
 
                     <p className="md:text-xl text-gray-500 font-medium">Today's Forecast</p>
 
@@ -133,25 +133,21 @@ export const Stats = () => {
             </div>
 
             {/* Air Condition Container*/}
-            <div className="w-full h-[210px] bg-gray-200 rounded-xl px-4 md:px-10 py-2 md:py-4 flex flex-col gap-2">
+            <div className="w-full h-[200px] bg-gray-200 rounded-xl px-4 md:px-10 py-2 md:py-4 flex flex-col justify-center gap-2">
 
-                <div className="w-full h-[30%] flex justify-between items-center">
+                <div className="w-full h-[25%] flex justify-center sm:justify-start items-center">
 
                     <div>
                         <p className="md:text-xl font-medium text-gray-500">Air conditions</p>
                     </div>
 
-                    <div>
-                        <a href="#" className="font-medium text-white bg-[#007aff] rounded-xl px-3 py-1.5 hover:bg-[#0051AA] transition-all ease-in">See more</a>
-                    </div>
-
                 </div>
 
-                <div className="w-full h-[70%] flex">
+                <div className="w-full h-[60%] flex">
 
                     <div className="w-1/4 h-full flex">
 
-                        <div className="w-full h-full flex flex-col justify-between">
+                        <div className="w-full h-full flex flex-col justify-between gap-1">
 
                             <div className="w-full flex justify-center items-center">
 
@@ -163,11 +159,11 @@ export const Stats = () => {
                             </div>
 
                             <div className="w-full flex justify-center items-end text-center">
-                                <p className="text-gray-500 font-medium md:text-lg leading-tight">Real Feel</p>
+                                <p className="text-gray-500 font-medium text-sm sm:text-base md:text-lg leading-tight">Real Feel</p>
                             </div>
 
                             <div className="w-full flex justify-center items-start text-center">
-                                <p className="md:text-2xl text-lg font-medium">30º</p>
+                                <p className="md:text-2xl text-sm sm:text-lg font-medium">30º</p>
                             </div>
 
                         </div>
@@ -176,7 +172,7 @@ export const Stats = () => {
 
                     <div className="w-1/4 h-full flex">
 
-                        <div className="w-full h-full flex flex-col justify-between">
+                        <div className="w-full h-full flex flex-col justify-between gap-1">
 
                             <div className="w-full flex justify-center items-center">
 
@@ -188,13 +184,13 @@ export const Stats = () => {
 
                             <div className="w-full flex justify-center items-end text-center">
                             
-                                <p className="text-gray-500 font-medium md:text-lg leading-tight">Chance of rain</p>
+                                <p className="text-gray-500 font-medium text-sm sm:text-base md:text-lg leading-tight">Chance of rain</p>
                             
                             </div>
 
                             <div className="w-full flex justify-center items-start text-center">
                             
-                                <p className="md:text-2xl text-lg font-medium">0%</p>
+                                <p className="md:text-2xl text-sm sm:text-lg font-medium">0%</p>
 
                             </div>
 
@@ -204,7 +200,7 @@ export const Stats = () => {
 
                     <div className="w-1/4 h-full flex">
 
-                        <div className="w-full h-full flex flex-col justify-between">
+                        <div className="w-full h-full flex flex-col justify-between gap-1">
 
                             <div className="w-full flex justify-center items-center">
 
@@ -219,13 +215,13 @@ export const Stats = () => {
 
                             <div className="w-full flex justify-center items-end text-center">
                             
-                                <p className="text-gray-500 font-medium md:text-lg leading-tight">Wind km/h</p>
+                                <p className="text-gray-500 font-medium md:text-lg text-sm sm:text-lg leading-tight">Wind km/h</p>
 
                             </div>
 
                             <div className="w-full flex justify-center items-start text-center">
                             
-                                <p className="md:text-2xl text-lg font-medium">0.2</p>
+                                <p className="md:text-2xl text-sm sm:text-lg font-medium">0.2</p>
 
                             </div>
 
@@ -235,7 +231,7 @@ export const Stats = () => {
 
                     <div className="w-1/4 h-full flex">
 
-                        <div className="w-full h-full flex flex-col justify-between">
+                        <div className="w-full h-full flex flex-col justify-between gap-1">
 
                             <div className="w-full flex justify-center items-center">
 
@@ -255,13 +251,13 @@ export const Stats = () => {
 
                             <div className="w-full flex justify-center items-end text-center">
                             
-                                <p className="text-gray-500 font-medium md:text-lg leading-tight">UV Index</p>
+                                <p className="text-gray-500 font-medium md:text-lg text-sm sm:text-base leading-tight">UV Index</p>
 
                             </div>
 
                             <div className="w-full flex justify-center items-start text-center">
                             
-                                <p className="md:text-2xl text-lg font-medium">3</p>
+                                <p className="md:text-2xl text-sm sm:text-lg font-medium">3</p>
                                     
                             </div>
 
